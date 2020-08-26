@@ -140,8 +140,9 @@ $grey: #D1CCDC;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 8rem;
     color: $white;
+    padding: 0.8rem 9em;
+    vertical-align: middle;
 
 
 
@@ -238,6 +239,26 @@ $grey: #D1CCDC;
       height: 24px;
       width: 24px;
     }
+  }
+
+
+}
+
+.explore {
+  background: $primary-dark !important;
+  height: 100%;
+
+  .intro {
+    display: flex !important;
+    justify-content: space-evenly;
+    padding: 4rem 0rem;
+    color: $white;
+
+    // @include for-phone-only {
+    //   padding: 2rem 0rem;
+    //   flex-wrap: wrap;
+    // }
+
   }
 
 

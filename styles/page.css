@@ -130,8 +130,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 8rem;
   color: white;
+  padding: 0.8rem 9em;
+  vertical-align: middle;
 }
 
 .header .hero .overlay {
@@ -220,5 +221,21 @@
 .header .hero_linkedin {
   height: 24px;
   width: 24px;
+}
+
+.explore {
+  background: #0F101A !important;
+  height: 100%;
+}
+
+.explore .intro {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 4rem 0rem;
+  color: white;
 }
 /*# sourceMappingURL=page.css.map */
