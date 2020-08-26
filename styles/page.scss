@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+$primary: #121420;
+$primary-dark: #0F101A;
+$white: white;
+$middle-blue: #00E8FC;
+$grey: #D1CCDC;
+
+//Componets
+.button {
+  padding: 1.2rem;
+
+  &.middle-blue {
+    background: $middle-blue;
+    color: $primary-dark;
+  }
+
+  &.primary {
+    background: $primary;
+  }
+}
+
+.font {
+  &.weight400 {
+    font-weight: 400;
+  }
+
+  &.weight600 {
+    font-weight: 600;
+  }
+}
+
+.middle-blue {
+  background: $middle-blue;
+}
+
+.grey {
+  background: $grey;
+}
+
+.primary {
+  background: $primary;
+}
+
+.primary-dark {
+  background: $primary-dark;
+}
+
+.white {
+  background: white;
+}
+
+.card {
+  height: 250px;
+  width: 150px;
+}
+
+.button {
+
+  &.black {
+    width: 10%;
+    border: 1px solid $middle-blue;
+
+    // font-size: large;
+
+    &:hover {
+      color: $primary-dark;
+      background-color: $middle-blue;
+    }
+
+  }
+
+  &.blue {
+    width: 10%;
+    border: none;
+
+    &:hover {
+      color: $primary-dark;
+      background-color: $middle-blue;
+    }
+  }
+
+}
+
+
+//Sections
+.header {
+  background: $primary;
+  height: 100%;
+
+  .nav {
+    display: flex;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: space-between;
+    padding: 0.8rem 9em;
+
+
+    font-size: 0.875rem;
+
+    .logo_smile {
+      height: 50px;
+      width: 50px;
+
+      &:hover {
+        color: yellow;
+      }
+    }
+
+    .navbar {
+      list-style: none;
+      display: flex;
+      font-size: 1rem;
+
+      .nav-element {
+        padding: 1rem 1.2rem;
+
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          // color: gre$grey;
+        }
+
+
+        .link {
+          color: $white;
+
+          &:hover {
+            color: $primary-dark;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8rem;
+    color: $white;
+
+
+
+
+    .overlay {
+      position: absolute;
+      transition: all 0.3s ease;
+      opacity: 40%;
+      background-color: $middle-blue;
+    }
+
+
+
+    .overlayFade {
+      height: 480px;
+      width: 291px;
+      top: 0;
+      background-color: $middle-blue;
+    }
+
+    &_frame {
+      position: relative;
+      margin-right: 10rem;
+      margin-left: 4rem;
+
+      height: 460px;
+      width: 292px;
+
+      &:hover .overlay {
+        opacity: 0;
+      }
+    }
+
+    &_pic {
+      position: relative;
+
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-right: 3px solid $middle-blue;
+
+      border-bottom: 3px solid $middle-blue;
+      transition: border-width 0.3s linear;
+
+      &:hover {
+        border-width: 5px;
+      }
+
+      ;
+    }
+
+    &_line {
+      width: 50px;
+      align-content: left;
+      border: 3.2px solid $middle-blue;
+      border-radius: 3px;
+    }
+
+    &_name {
+      font-size: 6rem;
+      line-height: 1.1;
+    }
+
+    &_work {
+      color: $grey !important;
+      padding-top: 1.5rem;
+      font-size: 2rem;
+    }
+
+    &_contact_container {
+      padding-top: 4rem;
+
+    }
+
+    &_contact_img {
+      padding-right: 3rem;
+    }
+
+    &_github {
+      height: 24px;
+      width: 24px;
+    }
+
+    &_instagram {
+      height: 24px;
+      width: 24px;
+    }
+
+    &_twitter {
+      height: 24px;
+      width: 24px;
+    }
+
+    &_linkedin {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+
+}
