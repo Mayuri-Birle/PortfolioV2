@@ -1,267 +1,332 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 $primary: #121420;
-$primary-dark: #0F101A;
+$primary-dark: #0f101a;
 $white: white;
-$middle-blue: #00E8FC;
-$grey: #D1CCDC;
+$middle-blue: #00e8fc;
+$grey: #d1ccdc;
 
 //Componets
 .button {
-  padding: 1.2rem;
+	padding: 1.2rem;
 
-  &.middle-blue {
-    background: $middle-blue;
-    color: $primary-dark;
-  }
+	&.middle-blue {
+		background: $middle-blue;
+		color: $primary-dark;
+	}
 
-  &.primary {
-    background: $primary;
-  }
+	&.primary {
+		background: $primary;
+	}
 }
 
 .font {
-  &.weight400 {
-    font-weight: 400;
-  }
-
-  &.weight600 {
-    font-weight: 600;
-  }
+	&.weight400 {
+		font-weight: 400;
+	}
+	&.weight500 {
+		font-weight: 500;
+	}
+	&.weight600 {
+		font-weight: 600;
+	}
+	&.weight700 {
+		font-weight: 700;
+	}
 }
 
 .middle-blue {
-  background: $middle-blue;
+	background: $middle-blue;
 }
 
 .grey {
-  background: $grey;
+	background: $grey;
 }
 
 .primary {
-  background: $primary;
+	background: $primary;
 }
 
 .primary-dark {
-  background: $primary-dark;
+	background: $primary-dark;
 }
 
 .white {
-  background: white;
+	background: white;
 }
 
 .card {
-  height: 250px;
-  width: 150px;
+	height: 250px;
+	width: 150px;
 }
 
 .button {
+	&.black {
+		width: 10%;
+		border: 1px solid $middle-blue;
 
-  &.black {
-    width: 10%;
-    border: 1px solid $middle-blue;
+		// font-size: large;
 
-    // font-size: large;
+		&:hover {
+			color: $primary-dark;
+			background-color: $middle-blue;
+		}
+	}
 
-    &:hover {
-      color: $primary-dark;
-      background-color: $middle-blue;
-    }
+	&.blue {
+		width: 10%;
+		border: none;
 
-  }
-
-  &.blue {
-    width: 10%;
-    border: none;
-
-    &:hover {
-      color: $primary-dark;
-      background-color: $middle-blue;
-    }
-  }
-
+		&:hover {
+			color: $primary-dark;
+			background-color: $middle-blue;
+		}
+	}
 }
-
 
 //Sections
 .header {
-  background: $primary;
-  height: 100%;
+	background: $primary;
+	height: 100%;
 
-  .nav {
-    display: flex;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
-    justify-content: space-between;
-    padding: 0.8rem 9em;
+	.nav {
+		display: flex;
+		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+		justify-content: space-between;
+		padding: 0.8rem 9em;
 
+		font-size: 0.875rem;
 
-    font-size: 0.875rem;
+		.logo_smile {
+			height: 50px;
+			width: 50px;
 
-    .logo_smile {
-      height: 50px;
-      width: 50px;
+			&:hover {
+				color: yellow;
+			}
+		}
 
-      &:hover {
-        color: yellow;
-      }
-    }
+		.navbar {
+			list-style: none;
+			display: flex;
+			font-size: 1rem;
 
-    .navbar {
-      list-style: none;
-      display: flex;
-      font-size: 1rem;
+			.nav-element {
+				padding: 1rem 1.2rem;
 
-      .nav-element {
-        padding: 1rem 1.2rem;
+				&:last-of-type {
+					padding-right: 0;
+				}
 
+				a {
+					text-decoration: none;
+					// color: gre$grey;
+				}
 
-        &:last-of-type {
-          padding-right: 0;
-        }
+				.link {
+					color: $white;
 
-        a {
-          text-decoration: none;
-          // color: gre$grey;
-        }
+					&:hover {
+						color: $primary-dark;
+					}
+				}
+			}
+		}
+	}
 
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: $white;
+		height: 100vh;
+		padding: 0.8rem 9em;
+		// vertical-align: middle;
 
-        .link {
-          color: $white;
+		// .overlay {
+		// 	position: absolute;
+		// 	transition: all 0.3s ease;
+		// 	opacity: 40%;
+		// 	background-color: $middle-blue;
+		// }
 
-          &:hover {
-            color: $primary-dark;
-          }
-        }
-      }
-    }
-  }
+		// .overlayFade {
+		// 	height: 480px;
+		// 	width: 291px;
+		// 	top: 0;
+		// 	background-color: $middle-blue;
+		// }
 
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: $white;
-    height: 100vh;
-    padding: 0.8rem 9em;
-    vertical-align: middle;
+		&_frame {
+			position: relative;
+			margin-right: 10rem;
+			margin-left: 4rem;
 
+			height: 460px;
+			width: 292px;
 
+			&:hover .overlay {
+				opacity: 0;
+			}
+		}
 
+		&_pic {
+			position: relative;
+			filter: grayscale(100%);
+			padding-right: 1rem;
+			padding-bottom: 1rem;
+			border-right: 3px solid $middle-blue;
 
-    .overlay {
-      position: absolute;
-      transition: all 0.3s ease;
-      opacity: 40%;
-      background-color: $middle-blue;
-    }
+			border-bottom: 3px solid $middle-blue;
+			transition: all 0.3s linear;
 
+			&:hover {
+				border-width: 5px;
+				filter: grayscale(0%);
+			}
+		}
 
+		&_line {
+			width: 50px;
+			align-content: left;
+			border: 3.2px solid $middle-blue;
+			border-radius: 3px;
+		}
 
-    .overlayFade {
-      height: 480px;
-      width: 291px;
-      top: 0;
-      background-color: $middle-blue;
-    }
+		&_name {
+			font-size: 6rem;
+			line-height: 1.1;
+		}
 
-    &_frame {
-      position: relative;
-      margin-right: 10rem;
-      margin-left: 4rem;
+		&_work {
+			color: $grey;
+			padding-top: 1.5rem;
+			font-size: 2rem;
+		}
 
-      height: 460px;
-      width: 292px;
+		&_contact_container {
+			padding-top: 4rem;
+		}
 
-      &:hover .overlay {
-        opacity: 0;
-      }
-    }
+		&_contact_img {
+			padding-right: 3rem;
+		}
 
-    &_pic {
-      position: relative;
-      filter: grayscale(100%);
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-      border-right: 3px solid $middle-blue;
+		&_github {
+			height: 24px;
+			width: 24px;
+		}
 
-      border-bottom: 3px solid $middle-blue;
-      transition: all 0.3s linear;
+		&_instagram {
+			height: 24px;
+			width: 24px;
+		}
 
-      &:hover {
-        border-width: 5px;
-        filter: grayscale(0%);
-      }
+		&_twitter {
+			height: 24px;
+			width: 24px;
+		}
 
-
-    }
-
-    &_line {
-      width: 50px;
-      align-content: left;
-      border: 3.2px solid $middle-blue;
-      border-radius: 3px;
-    }
-
-    &_name {
-      font-size: 6rem;
-      line-height: 1.1;
-    }
-
-    &_work {
-      color: $grey !important;
-      padding-top: 1.5rem;
-      font-size: 2rem;
-    }
-
-    &_contact_container {
-      padding-top: 4rem;
-
-    }
-
-    &_contact_img {
-      padding-right: 3rem;
-    }
-
-    &_github {
-      height: 24px;
-      width: 24px;
-    }
-
-    &_instagram {
-      height: 24px;
-      width: 24px;
-    }
-
-    &_twitter {
-      height: 24px;
-      width: 24px;
-    }
-
-    &_linkedin {
-      height: 24px;
-      width: 24px;
-    }
-  }
-
-
+		&_linkedin {
+			height: 24px;
+			width: 24px;
+		}
+	}
 }
 
 .explore {
-  background: $primary-dark !important;
-  height: 100%;
+	background: $primary-dark !important;
+	color: $white;
+	padding: 0.8rem 9em;
 
-  .intro {
-    display: flex !important;
-    justify-content: space-evenly;
-    padding: 4rem 0rem;
-    color: $white;
+	&_heading {
+		font-size: 3rem;
+		padding-bottom: 1rem;
+	}
+	// &_line {
+	// 	width: 30px;
+	// 	align-content: left;
+	// 	border: 2px solid $middle-blue;
+	// 	border-radius: 3px;
+	// }
+	&_line {
+		width: 40px;
+		align-content: left;
+		border: 3.2px solid $middle-blue;
+		border-radius: 3px;
+	}
+	&_intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: $white;
+		height: 100%;
+		width: 100%;
+	}
+	&_introduction {
+		font-size: 2rem;
+		padding-top: 10rem;
+		justify-content: center;
+		color: $middle-blue;
+		// @include for-phone-only {
+		//   padding: 2rem 0rem;
+		//   flex-wrap: wrap;
+		// }
+	}
+	&_about {
+		width: 50%;
+	}
+	&_desc {
+		font-size: 1.5rem;
+		// @include for-phone-only {
+		//   padding: 2rem 0rem;
+		//   flex-wrap: wrap;
+		// }
+	}
+}
 
-    // @include for-phone-only {
-    //   padding: 2rem 0rem;
-    //   flex-wrap: wrap;
-    // }
+.tools {
+	background: $primary !important;
+	color: $white;
+	padding: 0.8rem 9em;
 
-  }
+	&_heading {
+		font-size: 3rem;
+		padding-bottom: 1rem;
+	}
+	// &_line {
+	// 	width: 30px;
+	// 	align-content: left;
+	// 	border: 2px solid $middle-blue;
+	// 	border-radius: 3px;
+	// }
 
+	&_line {
+		width: 40px;
+		align-content: left;
+		border: 3.2px solid $middle-blue;
+		border-radius: 3px;
+	}
+	&_intro {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: $white;
+		height: 100%;
+		width: 100%;
+	}
+	&_vector {
+		width: 50%;
+	}
 
+	&_laptop {
+		margin-top: 20rem;
+	}
+	&_tech {
+		margin-left: -21rem;
+		margin-bottom: 10rem;
+	}
+	&_about {
+		width: 50%;
+	}
 }

@@ -4,8 +4,8 @@
 }
 
 .button.middle-blue {
-  background: #00E8FC;
-  color: #0F101A;
+  background: #00e8fc;
+  color: #0f101a;
 }
 
 .button.primary {
@@ -16,16 +16,24 @@
   font-weight: 400;
 }
 
+.font.weight500 {
+  font-weight: 500;
+}
+
 .font.weight600 {
   font-weight: 600;
 }
 
+.font.weight700 {
+  font-weight: 700;
+}
+
 .middle-blue {
-  background: #00E8FC;
+  background: #00e8fc;
 }
 
 .grey {
-  background: #D1CCDC;
+  background: #d1ccdc;
 }
 
 .primary {
@@ -33,7 +41,7 @@
 }
 
 .primary-dark {
-  background: #0F101A;
+  background: #0f101a;
 }
 
 .white {
@@ -47,12 +55,12 @@
 
 .button.black {
   width: 10%;
-  border: 1px solid #00E8FC;
+  border: 1px solid #00e8fc;
 }
 
 .button.black:hover {
-  color: #0F101A;
-  background-color: #00E8FC;
+  color: #0f101a;
+  background-color: #00e8fc;
 }
 
 .button.blue {
@@ -61,8 +69,8 @@
 }
 
 .button.blue:hover {
-  color: #0F101A;
-  background-color: #00E8FC;
+  color: #0f101a;
+  background-color: #00e8fc;
 }
 
 .header {
@@ -117,7 +125,7 @@
 }
 
 .header .nav .navbar .nav-element .link:hover {
-  color: #0F101A;
+  color: #0f101a;
 }
 
 .header .hero {
@@ -133,22 +141,6 @@
   color: white;
   height: 100vh;
   padding: 0.8rem 9em;
-  vertical-align: middle;
-}
-
-.header .hero .overlay {
-  position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  opacity: 40%;
-  background-color: #00E8FC;
-}
-
-.header .hero .overlayFade {
-  height: 480px;
-  width: 291px;
-  top: 0;
-  background-color: #00E8FC;
 }
 
 .header .hero_frame {
@@ -169,8 +161,8 @@
           filter: grayscale(100%);
   padding-right: 1rem;
   padding-bottom: 1rem;
-  border-right: 3px solid #00E8FC;
-  border-bottom: 3px solid #00E8FC;
+  border-right: 3px solid #00e8fc;
+  border-bottom: 3px solid #00e8fc;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -185,7 +177,7 @@
   width: 50px;
   -ms-flex-line-pack: left;
       align-content: left;
-  border: 3.2px solid #00E8FC;
+  border: 3.2px solid #00e8fc;
   border-radius: 3px;
 }
 
@@ -195,7 +187,7 @@
 }
 
 .header .hero_work {
-  color: #D1CCDC !important;
+  color: #d1ccdc;
   padding-top: 1.5rem;
   font-size: 2rem;
 }
@@ -229,18 +221,104 @@
 }
 
 .explore {
-  background: #0F101A !important;
-  height: 100%;
+  background: #0f101a !important;
+  color: white;
+  padding: 0.8rem 9em;
 }
 
-.explore .intro {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+.explore_heading {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.explore_line {
+  width: 40px;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  border: 3.2px solid #00e8fc;
+  border-radius: 3px;
+}
+
+.explore_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 4rem 0rem;
   color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.explore_introduction {
+  font-size: 2rem;
+  padding-top: 10rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00e8fc;
+}
+
+.explore_about {
+  width: 50%;
+}
+
+.explore_desc {
+  font-size: 1.5rem;
+}
+
+.tools {
+  background: #121420 !important;
+  color: white;
+  padding: 0.8rem 9em;
+}
+
+.tools_heading {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.tools_line {
+  width: 40px;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  border: 3.2px solid #00e8fc;
+  border-radius: 3px;
+}
+
+.tools_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.tools_vector {
+  width: 50%;
+}
+
+.tools_laptop {
+  margin-top: 20rem;
+}
+
+.tools_tech {
+  margin-left: -21rem;
+  margin-bottom: 10rem;
+}
+
+.tools_about {
+  width: 50%;
 }
 /*# sourceMappingURL=page.css.map */
