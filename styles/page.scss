@@ -141,6 +141,7 @@ $grey: #D1CCDC;
     align-items: center;
     justify-content: space-evenly;
     color: $white;
+    height: 100vh;
     padding: 0.8rem 9em;
     vertical-align: middle;
 
@@ -178,19 +179,20 @@ $grey: #D1CCDC;
 
     &_pic {
       position: relative;
-
+      filter: grayscale(100%);
       padding-right: 1rem;
       padding-bottom: 1rem;
       border-right: 3px solid $middle-blue;
 
       border-bottom: 3px solid $middle-blue;
-      transition: border-width 0.3s linear;
+      transition: all 0.3s linear;
 
       &:hover {
         border-width: 5px;
+        filter: grayscale(0%);
       }
 
-      ;
+
     }
 
     &_line {

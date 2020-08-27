@@ -131,6 +131,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: white;
+  height: 100vh;
   padding: 0.8rem 9em;
   vertical-align: middle;
 }
@@ -164,16 +165,20 @@
 
 .header .hero_pic {
   position: relative;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   padding-right: 1rem;
   padding-bottom: 1rem;
   border-right: 3px solid #00E8FC;
   border-bottom: 3px solid #00E8FC;
-  -webkit-transition: border-width 0.3s linear;
-  transition: border-width 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .header .hero_pic:hover {
   border-width: 5px;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .header .hero_line {
