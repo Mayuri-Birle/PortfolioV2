@@ -223,7 +223,7 @@
 .explore {
   background: #0f101a !important;
   color: white;
-  padding: 0.8rem 9em;
+  padding: 0.8rem 9rem;
 }
 
 .explore_heading {
@@ -274,7 +274,7 @@
 .tools {
   background: #121420 !important;
   color: white;
-  padding: 0.8rem 9em;
+  padding: 0.8rem 9rem;
 }
 
 .tools_heading {
@@ -306,19 +306,110 @@
 }
 
 .tools_vector {
-  width: 50%;
+  height: 100%;
 }
 
 .tools_laptop {
-  margin-top: 20rem;
+  margin-top: 25rem;
 }
 
 .tools_tech {
+  margin-top: 5rem;
   margin-left: -21rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 
 .tools_about {
   width: 50%;
+}
+
+.projects {
+  background: #121420 !important;
+  color: white;
+  padding: 0.8rem 9rem;
+}
+
+.projects_heading {
+  font-size: 3rem;
+}
+
+.projects_line {
+  width: 40px;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  border: 3.2px solid #00e8fc;
+  border-radius: 3px;
+}
+
+.projects_features {
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: #00e8fc;
+}
+
+.projects_vector {
+  height: 100%;
+}
+
+.projects_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.projects_feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1rem;
+}
+
+.projects_feature_image {
+  width: 500px;
+  height: 400px;
+}
+
+.projects_feature_content {
+  padding-left: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects_feature_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.projects_feature_heading_right {
+  padding: 1rem;
 }
 /*# sourceMappingURL=page.css.map */

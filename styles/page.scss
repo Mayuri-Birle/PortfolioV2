@@ -237,7 +237,7 @@ $grey: #d1ccdc;
 .explore {
 	background: $primary-dark !important;
 	color: $white;
-	padding: 0.8rem 9em;
+	padding: 0.8rem 9rem;
 
 	&_heading {
 		font-size: 3rem;
@@ -288,7 +288,7 @@ $grey: #d1ccdc;
 .tools {
 	background: $primary !important;
 	color: $white;
-	padding: 0.8rem 9em;
+	padding: 0.8rem 9rem;
 
 	&_heading {
 		font-size: 3rem;
@@ -316,17 +316,82 @@ $grey: #d1ccdc;
 		width: 100%;
 	}
 	&_vector {
-		width: 50%;
+		height: 100%;
 	}
 
 	&_laptop {
-		margin-top: 20rem;
+		margin-top: 25rem;
 	}
 	&_tech {
+		margin-top: 5rem;
 		margin-left: -21rem;
-		margin-bottom: 10rem;
+		margin-bottom: 15rem;
 	}
 	&_about {
 		width: 50%;
+	}
+}
+.projects {
+	background: $primary !important;
+	color: $white;
+	padding: 0.8rem 9rem;
+
+	&_heading {
+		font-size: 3rem;
+	}
+	// &_line {
+	// 	width: 30px;
+	// 	align-content: left;
+	// 	border: 2px solid $middle-blue;
+	// 	border-radius: 3px;
+	// }
+
+	&_line {
+		width: 40px;
+		align-content: left;
+		border: 3.2px solid $middle-blue;
+		border-radius: 3px;
+	}
+
+	&_features {
+		font-size: 2rem;
+		padding-top: 2rem;
+		color: $middle-blue;
+	}
+	&_vector {
+		height: 100%;
+	}
+	&_container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		color: $white;
+		height: 100%;
+		width: 100%;
+		// flex-direction: row;
+	}
+	&_feature {
+		display: flex;
+		flex-direction: column;
+		padding-top: 1rem;
+		&_image {
+			width: 500px;
+			height: 400px;
+		}
+		&_content {
+			padding-left: 1.4rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		&_heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 2rem;
+			&_right {
+				padding: 1rem;
+			}
+		}
 	}
 }
