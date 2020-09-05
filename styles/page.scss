@@ -4,7 +4,33 @@ $primary: #121420;
 $primary-dark: #0f101a;
 $white: white;
 $middle-blue: #00e8fc;
-$grey: #d1ccdc;
+$grey: #bdc3c7;
+
+@mixin for-phone-only {
+	@media (max-width: 599px) {
+		@content;
+	}
+}
+@mixin for-tablet-portrait-up {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
+@mixin for-tablet-landscape-up {
+	@media (min-width: 900px) {
+		@content;
+	}
+}
+@mixin for-desktop-up {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin for-big-desktop-up {
+	@media (min-width: 1800px) {
+		@content;
+	}
+}
 
 //Componets
 .button {
@@ -87,14 +113,25 @@ $grey: #d1ccdc;
 //Sections
 .header {
 	background: $primary;
-	height: 100%;
+	height: 100vh;
 
+	@include for-phone-only {
+		background: $primary;
+	}
+	@include for-tablet-portrait-up {
+		background: $primary;
+		// width: 100vw;
+		overflow-x: hidden;
+	}
 	.nav {
 		display: flex;
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
 		justify-content: space-between;
 		padding: 1rem 12em;
 
+		@include for-phone-only {
+			align-items: center;
+		}
 		font-size: 0.875rem;
 
 		.logo_smile {
@@ -178,7 +215,7 @@ $grey: #d1ccdc;
 			border-right: 3px solid $middle-blue;
 
 			border-bottom: 3px solid $middle-blue;
-			transition: all 0.3s linear;
+			transition: all 0s linear;
 
 			&:hover {
 				border-width: 5px;
@@ -242,11 +279,12 @@ $grey: #d1ccdc;
 	flex-direction: column;
 	justify-content: space-evenly;
 
-	height: 100%;
+	// height: 100%;
 	width: 100%;
 	&_heading {
 		font-size: 3rem;
 		padding-bottom: 1rem;
+		padding-top: 3rem;
 	}
 	// &_line {
 	// 	width: 30px;
@@ -255,7 +293,7 @@ $grey: #d1ccdc;
 	// 	border-radius: 3px;
 	// }
 	&_line {
-		width: 40px;
+		width: 45px;
 		align-content: left;
 		border: 3.2px solid $middle-blue;
 		border-radius: 3px;
@@ -301,6 +339,11 @@ $grey: #d1ccdc;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+
+	&_heading {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
 
 	&_about {
 		display: flex;
@@ -359,37 +402,62 @@ $grey: #d1ccdc;
 	.feature_card {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
 		justify-content: center;
 		padding-top: 2rem;
-		padding-bottom: 2rem;
+		padding-bottom: 4rem;
 		.imaage {
-			width: 400px;
-			height: 300px;
+			width: 500px;
+			height: 400px;
 		}
 		.feature_body {
 			display: flex;
 			flex-direction: column;
-			padding-left: 2rem;
-			font-size: 1.5rem;
+			padding-left: 3rem;
+			justify-content: space-between;
+			font-size: 2.5rem;
 			color: $middle-blue;
 			.feature_topic {
 				display: flex;
+				color: $white;
+				align-content: stretch;
 				justify-content: space-between;
 				.head {
 					display: flex;
 					flex-direction: row;
 				}
 				.right_link {
-					width: 50px;
-					height: 50px;
+					width: 60px;
+					height: 60px;
+					padding-right: 1rem;
+				}
+			}
+		}
+		.feature_body1 {
+			display: flex;
+			flex-direction: column;
+			padding-right: 2.5rem;
+			justify-content: space-between;
+			font-size: 3rem;
+			color: $middle-blue;
+			.feature_topic {
+				display: flex;
+				color: $white;
+				align-content: stretch;
+				justify-content: space-between;
+				.head {
+					display: flex;
+					flex-direction: row;
+				}
+				.right_link {
+					width: 60px;
+					height: 60px;
 					padding-right: 1rem;
 				}
 			}
 		}
 		.feature_content {
 			padding-top: 1rem;
-			font-size: 1rem;
+			font-size: 1.3rem;
 			color: $white;
 		}
 	}
@@ -397,10 +465,6 @@ $grey: #d1ccdc;
 		padding-top: 3rem;
 		padding-bottom: 1rem;
 		font-size: 3rem;
-	}
-	&_other {
-		display: flex;
-		flex-direction: row;
 	}
 
 	&_line {
@@ -414,5 +478,147 @@ $grey: #d1ccdc;
 			font-size: 2rem;
 			color: $middle-blue;
 		}
+	}
+	.feature_tools {
+		align-content: flex-end;
+		.tech_icons {
+			list-style-type: none;
+		}
+		.list_icons {
+			display: initial;
+			padding-right: 1.5rem;
+		}
+		.node_icon {
+			height: 80px;
+			width: 80px;
+		}
+	}
+	&_other {
+		display: flex;
+		flex-direction: column;
+	}
+	.other_cards {
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: center;
+	}
+	.other_card {
+		margin-top: 2rem;
+		margin-right: 2rem;
+		// margin-right: 2rem;
+		padding: 3rem;
+		display: flex;
+		justify-content: space-between;
+		background-color: $primary-dark;
+		width: 42vh;
+		height: 55vh;
+		flex-direction: column;
+		&:last-of-type {
+			margin-right: 0rem;
+		}
+
+		.other_heading {
+			font-size: 2rem;
+		}
+		.other_link {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+		}
+		.imaage {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		.other_content {
+			display: flex;
+			flex-direction: column;
+			.other_heading {
+				padding-bottom: 2rem;
+			}
+		}
+		.other_body {
+			font-size: 1rem;
+		}
+	}
+	.other_tools {
+		align-content: flex-end;
+		.tech_icons {
+			list-style-type: none;
+		}
+		.list_icons {
+			display: initial;
+			padding-right: 1.5rem;
+		}
+		.node_icon {
+			height: 80px;
+			width: 80px;
+		}
+	}
+}
+.get_in_touch {
+	background: $primary-dark !important;
+	color: $white;
+	padding: 1rem 20rem;
+	display: flex;
+	flex-direction: column;
+	// flex-direction: column;
+	// justify-content: space-evenly;
+	.social_icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact_heading {
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+		font-size: 3rem;
+	}
+	.social_contact_container {
+		padding-top: 4rem;
+	}
+
+	.social_contact_img {
+		padding-left: 3rem;
+	}
+
+	.social_github {
+		height: 45px;
+		width: 45px;
+	}
+
+	.social_instagram {
+		height: 45px;
+		width: 45px;
+	}
+
+	.social_twitter {
+		height: 45px;
+		width: 45px;
+		color: $white;
+	}
+
+	.social_linkedin {
+		height: 45px;
+		width: 45px;
+	}
+	// .github_div {
+	// 	height: 50px;
+	// 	width: 50px;
+	// 	background-color: $primary;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
+}
+.footer {
+	background: $primary-dark !important;
+	color: $white;
+	padding: 1rem 20rem;
+	height: 20vh;
+	display: flex;
+	font-size: 1rem;
+	justify-content: center;
+	align-items: center;
+	span {
+		color: $middle-blue !important;
 	}
 }
