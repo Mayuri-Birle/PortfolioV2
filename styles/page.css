@@ -126,11 +126,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .header .nav .navbar .nav-element {
-  padding: 1rem 1.2rem;
+  padding: 1rem 1rem;
 }
 
 .header .nav .navbar .nav-element:last-of-type {
@@ -160,7 +160,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: white;
-  height: 100vh;
+  min-height: 80vh;
   padding: 0.8rem 9em;
 }
 
@@ -168,8 +168,8 @@
   position: relative;
   margin-right: 10rem;
   margin-left: 4rem;
-  height: 460px;
-  width: 292px;
+  height: 28.75rem;
+  width: 18.25rem;
 }
 
 .header .hero_frame:hover .overlay {
@@ -203,7 +203,7 @@
 }
 
 .header .hero_name {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1.1;
 }
 
@@ -244,7 +244,7 @@
 .explore {
   background: #0f101a !important;
   color: white;
-  padding: 1rem 20rem;
+  padding: 1rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +259,7 @@
 }
 
 .explore_heading {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
   padding-top: 3rem;
 }
@@ -273,7 +273,7 @@
 }
 
 .explore .explore_introduction {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 10rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -312,13 +312,18 @@
 }
 
 .explore_desc {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.explore .vector {
+  height: 25rem;
+  width: 25rem;
 }
 
 .tools {
   background: #121420 !important;
   color: white;
-  padding: 1rem 20rem;
+  padding: 1rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,8 +358,13 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-bottom: -12rem;
+  margin-bottom: -15rem;
   padding-bottom: 10rem;
+}
+
+.tools_image {
+  height: 300px;
+  width: 300px;
 }
 
 .tools_tech {
@@ -371,7 +381,7 @@
 }
 
 .tools_heading {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -390,7 +400,7 @@
 .project {
   background: #121420 !important;
   color: white;
-  padding: 1rem 20rem;
+  padding: 1rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +422,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 2rem;
+  font-size: 1.5rem;
 }
 
 .project .feature_card {
@@ -430,8 +441,8 @@
 }
 
 .project .feature_card .imaage {
-  width: 500px;
-  height: 400px;
+  width: 23.43rem;
+  height: 17.18rem;
 }
 
 .project .feature_card .feature_body {
@@ -446,7 +457,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #00e8fc;
 }
 
@@ -473,65 +484,21 @@
 }
 
 .project .feature_card .feature_body .feature_topic .right_link {
-  width: 60px;
-  height: 60px;
-  padding-right: 1rem;
-}
-
-.project .feature_card .feature_body1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-right: 2.5rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 3rem;
-  color: #00e8fc;
-}
-
-.project .feature_card .feature_body1 .feature_topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.project .feature_card .feature_body1 .feature_topic .head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.project .feature_card .feature_body1 .feature_topic .right_link {
-  width: 60px;
-  height: 60px;
+  width: 3.125rem;
+  height: 3.125rem;
   padding-right: 1rem;
 }
 
 .project .feature_card .feature_content {
   padding-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
 }
 
 .project_heading {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .project_line {
@@ -543,7 +510,7 @@
 }
 
 .project .feature_heading .feature {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #00e8fc;
 }
 
@@ -562,8 +529,8 @@
 }
 
 .project .feature_tools .node_icon {
-  height: 80px;
-  width: 80px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
 .project_other {
@@ -587,7 +554,7 @@
 .project .other_card {
   margin-top: 2rem;
   margin-right: 2rem;
-  padding: 3rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +562,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #0f101a;
-  width: 42vh;
+  width: 45vh;
   height: 55vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -608,7 +575,7 @@
 }
 
 .project .other_card .other_heading {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .project .other_card .other_link {
@@ -625,8 +592,8 @@
 }
 
 .project .other_card .imaage {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .project .other_card .other_content {
@@ -644,7 +611,7 @@
 }
 
 .project .other_card .other_body {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .project .other_tools {
@@ -662,14 +629,14 @@
 }
 
 .project .other_tools .node_icon {
-  height: 80px;
-  width: 80px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
 .get_in_touch {
   background: #0f101a !important;
   color: white;
-  padding: 1rem 20rem;
+  padding: 1rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +661,7 @@
 .get_in_touch .contact_heading {
   padding-top: 3rem;
   padding-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .get_in_touch .social_contact_container {
@@ -706,24 +673,24 @@
 }
 
 .get_in_touch .social_github {
-  height: 45px;
-  width: 45px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .get_in_touch .social_instagram {
-  height: 45px;
-  width: 45px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .get_in_touch .social_twitter {
-  height: 45px;
-  width: 45px;
+  height: 2.5rem;
+  width: 2.5rem;
   color: white;
 }
 
 .get_in_touch .social_linkedin {
-  height: 45px;
-  width: 45px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .footer {
