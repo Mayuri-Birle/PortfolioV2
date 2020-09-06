@@ -176,14 +176,15 @@
 @media (max-width: 599px) {
   .header .hero {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
     overflow-y: hidden;
+    margin-bottom: 2rem;
   }
 }
 
@@ -197,7 +198,8 @@
 
 @media (max-width: 599px) {
   .header .hero_frame {
-    margin: 0;
+    margin: 0 auto;
+    padding: 1rem;
   }
 }
 
@@ -266,8 +268,15 @@
   padding-top: 4rem;
 }
 
+@media (max-width: 599px) {
+  .header .hero .hero_text .hero_contact_container {
+    padding-bottom: 2rem;
+  }
+}
+
 .header .hero .hero_text .hero_contact_img {
   padding-right: 3rem;
+  text-decoration: none;
 }
 
 .header .hero .hero_text .hero_github {

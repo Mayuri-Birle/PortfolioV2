@@ -226,11 +226,12 @@ $grey: #bdc3c7;
     // 	background-color: $middle-blue;
     // }
     @include for-phone-only {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       // flex-wrap: wrap;
 			padding: 0;
 			overflow-y: hidden;
+			margin-bottom: 2rem;
     }
 
     &_frame {
@@ -243,8 +244,9 @@ $grey: #bdc3c7;
 
       @include for-phone-only {
         // height: 9.125rem;
-        // width: 14.375rem;
-        margin: 0;
+				// width: 14.375rem;
+				margin : 0 auto;
+				padding: 1rem;
       }
 
 
@@ -302,11 +304,15 @@ $grey: #bdc3c7;
       }
 
       .hero_contact_container {
-        padding-top: 4rem;
+				padding-top: 4rem;
+				@include for-phone-only{
+					padding-bottom: 2rem;
+				}
       }
 
       .hero_contact_img {
-        padding-right: 3rem;
+				padding-right: 3rem;
+				text-decoration: none;
       }
 
       .hero_github {
