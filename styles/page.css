@@ -166,7 +166,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -184,6 +183,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    overflow-y: hidden;
   }
 }
 
@@ -315,7 +315,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 1rem;
+    padding: 0rem 3rem;
   }
 }
 
@@ -369,7 +369,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .explore_about .about_content .explore_introduction {
@@ -383,13 +383,16 @@
 
 @media (max-width: 599px) {
   .explore_about .about_content .explore_introduction {
-    padding: 0rem;
+    padding-top: 1rem;
   }
 }
 
 @media (max-width: 599px) {
   .explore_about .about_image {
-    width: 100vw;
+    width: 85vw;
+  }
+  .explore_about .about_image img {
+    width: 100%;
   }
 }
 
@@ -457,19 +460,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 85vw;
   }
 }
 
 .tools_about_tech img {
-  width: 500px !important;
-  height: 500px !important;
+  width: 600px;
+  height: 600px;
 }
 
 @media (max-width: 599px) {
   .tools_about_tech img {
-    width: 200px !important;
-    height: 200px !important;
+    width: 100%;
   }
 }
 
@@ -545,7 +547,8 @@
 
 @media (max-width: 599px) {
   .project .feature_card .feature_image {
-    width: 100px;
+    width: 80vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -556,7 +559,7 @@
 
 @media (max-width: 599px) {
   .project .feature_card .feature_image img {
-    width: 10rem;
+    width: 100%;
   }
 }
 
@@ -671,6 +674,15 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 599px) {
+  .project .other_cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .project .other_card {
