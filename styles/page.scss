@@ -655,7 +655,10 @@ $grey: #bdc3c7;
     background-color: $primary-dark;
     width: 45vh;
     height: 55vh;
-    flex-direction: column;
+		flex-direction: column;
+		@include for-phone-only{
+			width: 100%;
+		}
 
     &:last-of-type {
       margin-right: 0rem;

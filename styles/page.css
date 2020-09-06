@@ -704,6 +704,12 @@
           flex-direction: column;
 }
 
+@media (max-width: 599px) {
+  .project .other_card {
+    width: 100%;
+  }
+}
+
 .project .other_card:last-of-type {
   margin-right: 0rem;
 }
