@@ -75,12 +75,13 @@
 
 .header {
   background: #121420;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media (max-width: 599px) {
   .header {
     background: #121420;
+    overflow-x: hidden;
   }
 }
 
@@ -113,12 +114,15 @@
 }
 
 .header .nav .logo_smile {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 
-.header .nav .logo_smile:hover {
-  color: yellow;
+@media (max-width: 599px) {
+  .header .nav .logo_smile {
+    height: 2.125rem;
+    width: 2.125rem;
+  }
 }
 
 .header .nav .navbar {
@@ -127,6 +131,12 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 0.7rem;
+}
+
+@media (max-width: 599px) {
+  .header .nav .navbar {
+    display: none;
+  }
 }
 
 .header .nav .navbar .nav-element {
@@ -149,6 +159,26 @@
   color: #0f101a;
 }
 
+@media (max-width: 599px) {
+  .header .nav .navbar .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch !important;
+        -ms-flex-align: stretch !important;
+            align-items: stretch !important;
+  }
+  .header .nav .navbar .nav-menu .nav-line {
+    width: 100px;
+    height: 5px;
+    margin: 3px 0;
+  }
+}
+
 .header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,12 +186,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
-  min-height: 80vh;
   padding: 0.8rem 9em;
+}
+
+@media (max-width: 599px) {
+  .header .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .header .hero_frame {
@@ -172,8 +213,11 @@
   width: 18.25rem;
 }
 
-.header .hero_frame:hover .overlay {
-  opacity: 0;
+@media (max-width: 599px) {
+  .header .hero_frame {
+    height: 28.75rem;
+    width: 18.25rem;
+  }
 }
 
 .header .hero_pic {
@@ -202,15 +246,35 @@
   border-radius: 3px;
 }
 
+@media (max-width: 599px) {
+  .header .hero_line {
+    width: 30px;
+  }
+}
+
 .header .hero_name {
   font-size: 5rem;
   line-height: 1.1;
+}
+
+@media (max-width: 599px) {
+  .header .hero_name {
+    font-size: 3rem;
+    padding: 0;
+  }
 }
 
 .header .hero_work {
   color: #bdc3c7;
   padding-top: 1.5rem;
   font-size: 2rem;
+}
+
+@media (max-width: 599px) {
+  .header .hero_work {
+    font-size: 1rem;
+    padding: 0;
+  }
 }
 
 .header .hero_contact_container {
@@ -256,6 +320,17 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+}
+
+@media (max-width: 599px) {
+  .explore {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .explore_heading {
@@ -629,8 +704,8 @@
 }
 
 .project .other_tools .node_icon {
-  height: 3.125rem;
-  width: 3.125rem;
+  height: 2.125rem;
+  width: 2.125rem;
 }
 
 .get_in_touch {
