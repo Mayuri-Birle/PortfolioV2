@@ -1,0 +1,24 @@
+{  
+    "name": "Mayuri Birle",   
+    "short_name": "Mayuri", 
+    "lang": "en-US",     
+    "start_url": "/index.html", 
+    "display": "standalone",  
+    "background_color": "#121420",   
+    "theme_color": "#0f101a",
+    
+    "icons": [
+        {
+          "src": "/img/svg/icon.svg",
+          "type": "image/png", "sizes": "72x72"
+        },
+        {
+            "src": "/img/svg/icon.svg",
+            "type": "image/png", "sizes": "192x192"
+        },
+        {
+            "src": "/img/svg/icon.svg",
+            "type": "image/png", "sizes": "512x512"
+        }
+    ] 
+}
