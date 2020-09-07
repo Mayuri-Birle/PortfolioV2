@@ -107,6 +107,7 @@
 
 @media (max-width: 599px) {
   .header .nav {
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -229,7 +230,7 @@
   width: 50px;
   -ms-flex-line-pack: left;
       align-content: left;
-  border: 3.2px solid #00e8fc;
+  border: 3px solid #00e8fc;
   border-radius: 3px;
 }
 
@@ -260,7 +261,7 @@
 @media (max-width: 599px) {
   .header .hero .hero_text .hero_work {
     font-size: 1rem;
-    padding: 0;
+    padding-top: 1rem;
   }
 }
 
@@ -270,6 +271,7 @@
 
 @media (max-width: 599px) {
   .header .hero .hero_text .hero_contact_container {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
@@ -338,7 +340,7 @@
   width: 45px;
   -ms-flex-line-pack: left;
       align-content: left;
-  border: 3.2px solid #00e8fc;
+  border: 3px solid #00e8fc;
   border-radius: 3px;
 }
 
@@ -429,7 +431,7 @@
 
 @media (max-width: 599px) {
   .tools {
-    padding: 2rem;
+    padding: 0rem 3rem;
   }
 }
 
@@ -441,7 +443,7 @@
 
 @media (max-width: 599px) {
   .tools_heading {
-    padding-top: 0rem;
+    padding-top: 3rem;
   }
 }
 
@@ -481,6 +483,8 @@
 @media (max-width: 599px) {
   .tools_about_tech img {
     width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
   }
 }
 
@@ -488,7 +492,7 @@
   width: 40px;
   -ms-flex-line-pack: left;
       align-content: left;
-  border: 3.2px solid #00e8fc;
+  border: 3px solid #00e8fc;
   border-radius: 3px;
 }
 
@@ -514,7 +518,7 @@
 
 @media (max-width: 599px) {
   .project {
-    padding: 1rem 2rem;
+    padding: 0rem 3rem;
   }
 }
 
@@ -590,7 +594,8 @@
 
 @media (max-width: 599px) {
   .project .feature_card .feature_body {
-    padding: 0rem;
+    padding: 1.5rem;
+    background-color: #0f101a;
   }
 }
 
@@ -624,7 +629,7 @@
 
 .project .feature_card .feature_content {
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: white;
 }
 
@@ -634,11 +639,17 @@
   font-size: 2rem;
 }
 
+@media (max-width: 599px) {
+  .project_heading {
+    padding-top: 3rem;
+  }
+}
+
 .project_line {
   width: 40px;
   -ms-flex-line-pack: left;
       align-content: left;
-  border: 3.2px solid #00e8fc;
+  border: 3px solid #00e8fc;
   border-radius: 3px;
 }
 
@@ -756,7 +767,7 @@
 }
 
 .project .other_card .other_content .other_heading {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .project .other_card .other_body {
@@ -865,9 +876,23 @@
   width: 2.5rem;
 }
 
+@media (max-width: 599px) {
+  .get_in_touch .social_icons .social_media .social_github {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
 .get_in_touch .social_icons .social_media .social_instagram {
   height: 2.5rem;
   width: 2.5rem;
+}
+
+@media (max-width: 599px) {
+  .get_in_touch .social_icons .social_media .social_instagram {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 .get_in_touch .social_icons .social_media .social_twitter {
@@ -876,9 +901,23 @@
   color: white;
 }
 
+@media (max-width: 599px) {
+  .get_in_touch .social_icons .social_media .social_twitter {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
 .get_in_touch .social_icons .social_media .social_linkedin {
   height: 2.5rem;
   width: 2.5rem;
+}
+
+@media (max-width: 599px) {
+  .get_in_touch .social_icons .social_media .social_linkedin {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 .footer {
@@ -888,7 +927,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -900,7 +943,50 @@
 @media (max-width: 599px) {
   .footer {
     width: 100vw;
+    height: 50vh;
   }
+  .footer p {
+    padding-bottom: 2rem;
+  }
+}
+
+.footer .navbar {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 599px) {
+  .footer .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
+.footer .navbar .nav-element {
+  padding: 1rem 1rem;
+}
+
+.footer .navbar .nav-element:last-of-type {
+  padding-right: 0;
+}
+
+.footer .navbar .nav-element a {
+  text-decoration: none;
+}
+
+.footer .navbar .nav-element .link {
+  color: white;
 }
 
 .footer span {
