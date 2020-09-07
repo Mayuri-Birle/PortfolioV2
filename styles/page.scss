@@ -626,7 +626,7 @@ $grey: #bdc3c7;
     padding-bottom: 1rem;
     font-size: 2rem;
 
-    @include for-phone-only{
+    @include for-phone-only {
       padding-top: 3rem;
     }
   }
@@ -697,6 +697,8 @@ $grey: #bdc3c7;
 
     &:last-of-type {
       margin-right: 0rem;
+
+      margin-bottom: 2rem
     }
 
     .other_heading {
@@ -858,7 +860,7 @@ $grey: #bdc3c7;
 
 
 .footer {
-  background: $primary-dark !important;
+  background-color: $primary;
   color: $white;
   // padding: 1rem 20rem;
   height: 20vh;
@@ -871,48 +873,50 @@ $grey: #bdc3c7;
   @include for-phone-only {
     width: 100vw;
     height: 50vh;
-    p{
+
+    p {
       padding-bottom: 2rem;
     }
   }
+
   .navbar {
     list-style: none;
     display: flex;
     font-size: 0.7rem;
     justify-content: center;
     padding-bottom: 2rem;
-  
+
     @include for-phone-only {
       flex-direction: column;
       align-self: baseline;
-      
+
 
     }
-  
+
     .nav-element {
       padding: 1rem 1rem;
-  
+
       &:last-of-type {
         padding-right: 0;
       }
-  
+
       a {
         text-decoration: none;
         // color: gre$grey;
       }
-  
+
       .link {
         color: $white;
-  
+
         // &:hover {
         //   color: $primary-dark;
         // }
       }
     }
-  
+
   }
 
-  
+
   span {
     color: $middle-blue !important;
   }

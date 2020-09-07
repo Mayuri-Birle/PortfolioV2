@@ -732,6 +732,7 @@
 
 .project .other_card:last-of-type {
   margin-right: 0rem;
+  margin-bottom: 2rem;
 }
 
 .project .other_card .other_heading {
@@ -921,7 +922,7 @@
 }
 
 .footer {
-  background: #0f101a !important;
+  background-color: #121420;
   color: white;
   height: 20vh;
   display: -webkit-box;
