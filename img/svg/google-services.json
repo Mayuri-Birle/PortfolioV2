@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466128964348",
+    "firebase_url": "https://employee-tracker-8fc79.firebaseio.com",
+    "project_id": "employee-tracker-8fc79",
+    "storage_bucket": "employee-tracker-8fc79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466128964348:android:8957ef69e522e1d70d6579",
+        "android_client_info": {
+          "package_name": "com.example.employee_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466128964348-pd398ads2b88ao4e7e79ceelo3dpnspo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.employee_management",
+            "certificate_hash": "d60cd25142838cf8f5e2c5274aceeffdd68e1a4b"
+          }
+        },
+        {
+          "client_id": "466128964348-rrr3419cab5f7vfdrqkik2d42tcp7259.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmNcK1ceXMDe4sl9Wy5rz2wxU1MBtgBds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466128964348-rrr3419cab5f7vfdrqkik2d42tcp7259.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
